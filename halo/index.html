@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <title>Document</title>
+</head>
+
+<body class="bg-cover bg-gray-800">
+<div class="mt-5 bg-cover m">
+    
+    <img src="/img/WhatsApp Image 2024-12-02 at 11.20.44.jpeg" alt="gambar" width="250" class="mx-auto rounded-lg shadow-2xl shadow-gray-600 brightness-75 mt-10">
+    <div class="absolute mt-16">
+        <div class="max-w-xl text-center ltr:sm:text-left rtl:sm:text-right">
+            <h1 class="text-3xl font-extrabold text-white sm:text-5xl">
+                Halo Aghis!!
+
+                <strong class="block font-extrabold text-rose-500"> Klik salah satu yaa!!! </strong>
+            </h1>
+
+            <p class="mt-4 max-w-lg text-white sm:text-xl/relaxed">
+                Kamu mau jalan bareng aku ga? minggu ini, minggu depan atau kapanpun deh, 
+            </p>
+
+            <div class="ms-2 mt-8 flex flex-wrap gap-4 text-center ">
+               
+               <button id="btn_mau" class=" mx-auto rounded bg-rose-600 px-12 py-3 text-sm font-medium text-white shadow hover:bg-rose-700 focus:outline-none focus:ring active:bg-rose-500 sm:w-auto">
+                <a href="/home.html">Ayok Gas Ajaaa!!!</a>
+               </button>
+
+               <button id="btn_gamau" onclick="gamau(this)" class=" absolute mx-auto rounded bg-white px-10 py-3 text-sm font-medium text-rose-600 shadow hover:text-rose-700 focus:outline-none focus:ring active:text-rose-500 sm:w-auto">
+                Aduh Ga Mau Aku :(
+               </button>
+               
+               
+                <!-- <button  id="btn_tolak" onclick="Gamau" style="position: absolute;" class="block mx-auto rounded bg-white px-10 py-3 text-sm font-medium text-rose-600 shadow hover:text-rose-700 focus:outline-none focus:ring active:text-rose-500 sm:w-auto" id="tolak">
+                    Ga Mau lo aku :(
+
+                </button>
+                
+                <button  id="btn_tolak" onclick="Gamau" style="position: absolute;" class="block mx-auto rounded bg-white px-10 py-3 text-sm font-medium text-rose-600 shadow hover:text-rose-700 focus:outline-none focus:ring active:text-rose-500 sm:w-auto" id="tolak">
+                    Maua aja :(
+
+                </button> -->
+
+               
+
+                <!-- <a href="#"
+                    class="block mx-auto rounded bg-white px-10 py-3 text-sm font-medium text-rose-600 shadow hover:text-rose-700 focus:outline-none focus:ring active:text-rose-500 sm:w-auto" id="tolak">
+                    Sorry Ga bisa :( 
+                </a> -->
+            </div>
+            <!-- <a href="#"
+            class="block mx-auto rounded bg-rose-600 px-12 py-3 text-sm font-medium text-white shadow hover:bg-rose-700 focus:outline-none focus:ring active:bg-rose-500 sm:w-auto">
+            Gas Hayuuk!
+        </a> -->
+        </div>
+    </div>
+</div>
+
+
+<script>
+    function gamau(id){
+        var mau = document.getElementById("btn_mau");
+        var i = Math.floor(Math.random()*300)+1;
+        var j = Math.floor(Math.random()*100)+mau.offsetTop;
+        id.style.left = i + 'px';
+        id.style.top = j + 'px';
+
+    }
+</script>
+    
+</body>
+
+</html>
